@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+*, ::before, ::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 10%;
+  background-color: #222;
+  color: #fff;
+  font-family: 'VT323', monospace;
+}
+
+.start {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.start__title {
+  font-size: 4rem;
+  margin-bottom: 5rem;
+}
+
+.start__counter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.start__human {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.start__pc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.start__message {
+  font-size: 2.5rem;
+}
+
+.options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.options__content {
+  width: 200px;
+  margin: 1rem;
+  border: 3px solid #82e6ff;
+  border-radius: 20px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: transform 300ms, border-color 300ms;
+}
+
+.options__content:hover {
+  border-color: #00ccff;
+  transform: scale(1.1);
+}
+
+.options__content:active {
+  transform: scale(1);
+}
+
+.options__img {
+  width: 100%;
+  padding: 1.5rem;
+  object-fit: cover;
+}
+
+.restart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+}
+
+.restart__message {
+  font-size: 2rem;
+}
+
+.restart__button {
+  padding: 10px 20px;
+  margin-top: 2rem;
+  border: 1px solid black;
+  background-color: #fff;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+@media (max-width: 525px) {
+  .options {
+    flex-direction: column;
+  }
+}

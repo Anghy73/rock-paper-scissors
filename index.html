@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock - Paper - Scissors</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="start">
+    <h1 class="start__title">Rock - Paper - Scissors</h1>
+    <div class="start__counter">
+      <div class="start__human">
+        <span>You</span>
+        <span class="human">0</span>
+      </div>
+      -
+      <div class="start__pc">
+        <span>PC</span>
+        <span class="pc">0</span>
+      </div>
+    </div>
+    <p class="start__message">Choose your weapon</p>
+  </div>
+  <div class="options">
+    <div class="options__content">
+      <img id="rock" class="options__img" src="./images/fist.png" alt="image of a fist">
+    </div>
+    <div class="options__content">
+      <img id="paper" class="options__img" src="./images/five.png" alt="image of a hand">
+    </div>
+    <div class="options__content">
+      <img id="scissors" class="options__img" src="./images/two.png"
+        alt="image of a hand making the figure of scissors">
+    </div>
+  </div>
+  <div class="restart">
+    <p class="restart__message"></p>
+    <button class="restart__button">Restart</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
